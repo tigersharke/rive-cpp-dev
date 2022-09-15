@@ -27,6 +27,9 @@ do-configure:
 do-build:
 	cd ${WRKSRC}/build && ${MAKE_ENV} ${MAKE_CMD} config=release
 
+do-install:
+# Applicable files are in ${WRKSRC}/build/bin/release and ${WRKSRC}/build/obj/release
+
 #.include <bsd.port.options.mk>
 
 .include <bsd.port.mk>
